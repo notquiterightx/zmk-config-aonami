@@ -1,0 +1,19 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_AONAMI_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "AONAMI"
+    
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_AONAMI_LEFT || SHIELD_AONAMI_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
