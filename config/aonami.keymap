@@ -134,6 +134,13 @@
         combo_backspace_l {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <10 22>;
+            layers = <0>;
+        };
+
+        combo_backspace_mac {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <10 22>;
+            layers = <1>;
         };
     };
 
@@ -361,9 +368,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
-
             label = "BASE";
-
             display-name = "Base";
             bindings = <
                      &kp Q    &kp W       &kp E        &kp R       &lt 3 T                                       &kp Y      &kp U            &kp I        &kp O       &kp P
@@ -376,9 +381,7 @@
         };
 
         base_mac_layer {
-
             label = "BASE_MAC";
-
             display-name = "BASE_MAC";
             bindings = <
                   &trans  &trans  &trans      &trans  &trans                  &trans  &trans  &trans      &trans  &trans
@@ -391,9 +394,7 @@
         };
 
         base_mirror_layer {
-
             label = "BASE_M";
-
             display-name = "Base Mirror";
             bindings = <
           &kp P      &kp O    &kp I         &kp U            &kp Y                          &kp T    &kp R      &kp E    &kp W  &kp Q
@@ -421,9 +422,7 @@
         };
 
         nav_layer {
-
             label = "NAVI";
-
             display-name = "Navigation";
             bindings = <
         &kp ESC    &kp HOME   &kp UP    &kp EQUAL  &kp LBRC                     &kp RBRC  &kp N7  &kp N8  &kp N9  &kp KP_PLUS
@@ -436,9 +435,7 @@
         };
 
         nav_mirror_layer {
-
             label = "NAVI_M";
-
             display-name = "Navigation Mirror";
             bindings = <
         &kp ESC    &kp N7  &kp N8  &kp N9  &kp PERIOD                     &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
@@ -453,9 +450,7 @@
         };
 
         sim_layer {
-
             label = "SYM";
-
             display-name = "Symbols";
             bindings = <
         &kp RA(N1)     &kp RA(N2)   &kp RA(N3)    &kp RA(N4)      &kp RA(N5)                  &kp RA(N6)    &kp RA(N7)      &kp RA(N8)  &kp RA(N9)  &kp RA(N0)
@@ -470,9 +465,7 @@
         };
 
         adjust_layer {
-
             label = "ADJ";
-
             display-name = "Adjustments";
             bindings = <
                 &sys_reset    &bt BT_CLR   &out OUT_TOG    &ind_con      &kt COMMA                     &trans  &kp F7  &kp F8  &kp F9  &kp F12
